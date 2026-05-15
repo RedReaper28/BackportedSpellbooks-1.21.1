@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " AC",
+    " CG",
+    "CG "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:pale_oak_log"
+    },
+    "G": {
+      "item": "minecraft:resin_clump"
+    },
+    "A": {
+      "item": "minecraft:open_eyeblossom"
+    }
+  },
+  "result": {
+    "id": "backportedspellbooks:eyebloosom_staff",
+    "count": 1
+  }
+}

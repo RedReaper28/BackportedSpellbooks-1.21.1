@@ -1,26 +1,18 @@
 package net.redreaper.backported_spellbooks;
 
+import mod.azure.azurelib.common.animation.cache.AzIdentityRegistry;
+import mod.azure.azurelib.common.render.item.AzItemRendererRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.redreaper.backported_spellbooks.init.*;
+import net.redreaper.backported_spellbooks.item.staves.eyebloosom_staff.EyebloosomStaffRenderer;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -28,12 +20,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 @Mod(BackportedSpellbooks.MOD_ID)
 public class BackportedSpellbooks {
@@ -41,21 +28,24 @@ public class BackportedSpellbooks {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public BackportedSpellbooks(IEventBus modEventBus, ModContainer modContainer) {
-        modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
 
+        ModExtendedArmorMaterials.register(modEventBus);
+        ModEntities.register(modEventBus);
+        ModSpellRegistry.register(modEventBus);
 
-        modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(this::commonSetup);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        // Animation Registry
+        AzIdentityRegistry.register(
+                ModItems.EYEBLOOSOM_STAFF.get()
+        );
     }
 
     @SubscribeEvent
@@ -63,11 +53,19 @@ public class BackportedSpellbooks {
 
     }
 
-    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber({Dist.CLIENT})
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+
+            AzItemRendererRegistry.register(EyebloosomStaffRenderer::new, ModItems.EYEBLOOSOM_STAFF.get());
+
+
+            // Animation Registry
+            AzIdentityRegistry.register(
+                    ModItems.EYEBLOOSOM_STAFF.get()
+            );
         }
     }
 

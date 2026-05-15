@@ -1,0 +1,13 @@
+{
+  "item.backportedspellbooks.eyebloosom_staff": "Eyebloosom Staff",
+
+  "item.backportedspellbooks.pale_observer_helmet": "Pale Observer Mask",
+  "item.backportedspellbooks.pale_observer_chestplate": "Pale Observer Chestplate",
+  "item.backportedspellbooks.pale_observer_leggings": "Pale Observer Leggings",
+  "item.backportedspellbooks.pale_observer_boots": "Pale Observer Boots",
+
+  "creative_tab.backportedspellbooks.backported_spellbooks": "Backported Spellbooks",
+
+  "spell.backportedspellbooks.pale_thorn": "Pale Thorn",
+  "spell.backportedspellbooks.pale_thorn.guide": "Shot a thick pale thorn,inflicting madness to lower your targets maximum mana reserves and piercing blocks"
+}

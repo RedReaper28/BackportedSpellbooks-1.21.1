@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:creaking_heart"
+  },
+  "base": {
+    "item": "irons_spellbooks:plagued_leggings"
+  },
+  "result": {
+    "count": 1,
+    "id": "backportedspellbooks:pale_observer_leggings"
+  },
+  "template": {
+    "item": "irons_spellbooks:nature_rune"
+  }
+}
