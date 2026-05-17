@@ -1,13 +1,16 @@
 package net.redreaper.backported_spellbooks;
 
+import io.redspace.ironsspellbooks.render.SpellBookCurioRenderer;
 import mod.azure.azurelib.common.animation.cache.AzIdentityRegistry;
 import mod.azure.azurelib.common.render.item.AzItemRendererRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.redreaper.backported_spellbooks.entities.weapons.GardenRapierRenderer;
 import net.redreaper.backported_spellbooks.init.*;
 import net.redreaper.backported_spellbooks.item.staves.eyebloosom_staff.EyebloosomStaffRenderer;
+import net.redreaper.backported_spellbooks.item.weapons.GardenRapierItem;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
@@ -21,6 +24,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 @Mod(BackportedSpellbooks.MOD_ID)
 public class BackportedSpellbooks {
@@ -35,6 +39,7 @@ public class BackportedSpellbooks {
 
         ModExtendedArmorMaterials.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModMobEffects.register(modEventBus);
         ModSpellRegistry.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -60,6 +65,12 @@ public class BackportedSpellbooks {
 
 
             AzItemRendererRegistry.register(EyebloosomStaffRenderer::new, ModItems.EYEBLOOSOM_STAFF.get());
+            AzItemRendererRegistry.register(GardenRapierRenderer::new, ModItems.GARDEN_RAPIER.get());
+
+            // Curio Rendering
+            event.enqueueWork(() -> {
+                CuriosRendererRegistry.register(ModItems.PALE_GUIDE.get(), SpellBookCurioRenderer::new);
+            });
 
 
             // Animation Registry

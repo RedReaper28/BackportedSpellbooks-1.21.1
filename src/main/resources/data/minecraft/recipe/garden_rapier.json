@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  A",
+    "CA ",
+    "BC "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:resin_brick"
+    },
+    "B": {
+      "item": "irons_spellbooks:weapon_parts"
+    },
+    "C": {
+      "item": "irons_spellbooks:mithril_ingot"
+    }
+  },
+  "result": {
+    "id": "backportedspellbooks:garden_rapier",
+    "count": 1
+  }
+}

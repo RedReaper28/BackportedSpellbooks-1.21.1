@@ -18,7 +18,6 @@ public class ModSpellRegistry {
         return SPELLS.register(spell.getSpellName(), () -> spell);
     }
 
-
     //NATURE
     public static final Supplier<AbstractSpell> PALE_THORN = registerSpell(new PaleThornSpell());
 

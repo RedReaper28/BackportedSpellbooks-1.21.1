@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "backportedspellbooks:item/garden_rapier_hand"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "backportedspellbooks:item/garden_rapier_gui"
+    },
+    "ground": {
+      "parent": "backportedspellbooks:item/garden_rapier_gui"
+    },
+    "fixed": {
+      "parent": "backportedspellbooks:item/garden_rapier_gui"
+    }
+  }
+}

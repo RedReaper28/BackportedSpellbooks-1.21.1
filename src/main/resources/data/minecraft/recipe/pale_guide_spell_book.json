@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " CE",
+    "AFD",
+    "EB "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:pale_moss_block"
+    },
+    "B": {
+      "item": "minecraft:resin_block"
+    },
+    "C": {
+      "item": "minecraft:creaking_heart"
+    },
+    "D": {
+      "item": "minecraft:open_eyeblossom"
+    },
+    "E": {
+      "item": "irons_spellbooks:mithril_weave"
+    },
+    "F": {
+      "item": "irons_spellbooks:druidic_spell_book"
+    }
+  },
+  "result": {
+    "id": "backportedspellbooks:pale_guide_spell_book",
+    "count": 1
+  }
+}

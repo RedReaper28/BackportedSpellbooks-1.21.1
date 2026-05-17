@@ -18,6 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
@@ -25,6 +26,7 @@ import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.redreaper.backported_spellbooks.BackportedSpellbooks;
 import net.redreaper.backported_spellbooks.entities.spell.pale_thorn.PaleThornVisualEntity;
+import net.redreaper.backported_spellbooks.init.ModMobEffects;
 
 import java.util.List;
 import java.util.Optional;
@@ -85,6 +87,8 @@ public class PaleThornSpell extends AbstractSpell {
             int i = getDuration(spellLevel, entity);
             Entity target = ((EntityHitResult) hitResult).getEntity();
             DamageSources.applyDamage(target, getDamage(spellLevel, entity), getDamageSource(entity));
+            if (target instanceof  LivingEntity livingEntity)
+                livingEntity.addEffect(new MobEffectInstance(ModMobEffects.PARANOIA,i,1, false, true, true));
             MagicManager.spawnParticles(level, ParticleHelper.ROOT_FOG, hitResult.getLocation().x, target.getY(), hitResult.getLocation().z, 4, 0, 0, 0, .3, true);
         } else if (hitResult.getType() == HitResult.Type.BLOCK) {
             MagicManager.spawnParticles(level, ParticleHelper.ROOT_FOG, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z, 4, 0, 0, 0, .3, true);

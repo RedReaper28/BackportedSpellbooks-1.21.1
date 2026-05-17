@@ -1,5 +1,8 @@
 {
+  "item.backportedspellbooks.pale_guide_spell_book": "Pale Garden Guide",
   "item.backportedspellbooks.eyebloosom_staff": "Eyebloosom Staff",
+  "item.backportedspellbooks.garden_rapier": "Garden Rapier",
+  "item.backportedspellbooks.garden_rapier.desc": "Inflicts Resin Poison on Hit",
 
   "item.backportedspellbooks.pale_observer_helmet": "Pale Observer Mask",
   "item.backportedspellbooks.pale_observer_chestplate": "Pale Observer Chestplate",
@@ -8,6 +11,9 @@
 
   "creative_tab.backportedspellbooks.backported_spellbooks": "Backported Spellbooks",
 
+  "effect.backportedspellbooks.paranoia": "Paranoia",
+  "effect.backportedspellbooks.resin_poison": "Resin Poison",
+
   "spell.backportedspellbooks.pale_thorn": "Pale Thorn",
-  "spell.backportedspellbooks.pale_thorn.guide": "Shot a thick pale thorn,inflicting madness to lower your targets maximum mana reserves and piercing blocks"
+  "spell.backportedspellbooks.pale_thorn.guide": "Shot a thick pale thorn,inflicting Páranoia to lower your targets maximum mana and cast speed, piercing blocks"
 }
