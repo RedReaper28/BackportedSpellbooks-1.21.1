@@ -8,6 +8,8 @@
   "item.backportedspellbooks.pale_observer_chestplate": "Pale Observer Chestplate",
   "item.backportedspellbooks.pale_observer_leggings": "Pale Observer Leggings",
   "item.backportedspellbooks.pale_observer_boots": "Pale Observer Boots",
+  "item.backportedspellbooks.resin_vial": "Pale Resin Viqal",
+  "item.backportedspellbooks.pale_amber": "Pale Amber",
 
   "creative_tab.backportedspellbooks.backported_spellbooks": "Backported Spellbooks",
 
@@ -15,5 +17,9 @@
   "effect.backportedspellbooks.resin_poison": "Resin Poison",
 
   "spell.backportedspellbooks.pale_thorn": "Pale Thorn",
-  "spell.backportedspellbooks.pale_thorn.guide": "Shot a thick pale thorn,inflicting Páranoia to lower your targets maximum mana and cast speed, piercing blocks"
+  "spell.backportedspellbooks.pale_thorn.guide": "Shot a thick pale thorn,inflicting Páranoia to lower your targets maximum mana and cast speed, piercing blocks.Damage scales with Nature Spell Power and Eldritch Spell Power",
+  "spell.backportedspellbooks.resin_spray": "Resin Spray",
+  "spell.backportedspellbooks.resin_spray.guide": "Spew forward a cone of pale resin,damaging an inflicting Resin Poisoning to creatures it reaches.Damage scales with Nature Spell Power and Eldritch Spell Power",
+
+  "school.backportedspellbooks.pale_flora": "Pale Flora"
 }

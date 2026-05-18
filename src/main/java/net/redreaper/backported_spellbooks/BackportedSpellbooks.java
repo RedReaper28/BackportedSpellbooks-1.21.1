@@ -41,6 +41,10 @@ public class BackportedSpellbooks {
         ModEntities.register(modEventBus);
         ModMobEffects.register(modEventBus);
         ModSpellRegistry.register(modEventBus);
+        ModParticleTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
+        ModSpellSubSchool.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

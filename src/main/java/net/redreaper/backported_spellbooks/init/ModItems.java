@@ -32,7 +32,11 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> PALE_OBSERVER_BOOTS = ITEMS.register("pale_observer_boots", () ->
             new PaleObserverArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).durability(ArmorItem.Type.BOOTS.getDurability(37))));
 
+    public static final DeferredItem<Item> RESIN_VIAL=ITEMS.register("resin_vial",
+            () -> new Item(ItemPropertiesHelper.material()));
 
+    public static final DeferredItem<Item> PALE_AMBER=ITEMS.register("pale_amber",
+            () -> new Item(ItemPropertiesHelper.material()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

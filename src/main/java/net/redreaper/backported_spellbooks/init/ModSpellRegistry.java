@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redreaper.backported_spellbooks.BackportedSpellbooks;
 import net.redreaper.backported_spellbooks.spells.nature.PaleThornSpell;
+import net.redreaper.backported_spellbooks.spells.nature.ResinSpraySpell;
 
 import java.util.function.Supplier;
 
@@ -20,6 +21,7 @@ public class ModSpellRegistry {
 
     //NATURE
     public static final Supplier<AbstractSpell> PALE_THORN = registerSpell(new PaleThornSpell());
+    public static final Supplier<AbstractSpell> RESIN_SPRAY = registerSpell(new ResinSpraySpell());
 
     public static void register(IEventBus eventBus)
     {

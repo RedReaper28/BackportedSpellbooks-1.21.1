@@ -10,7 +10,7 @@
       "item": "minecraft:pale_moss_block"
     },
     "B": {
-      "item": "minecraft:resin_block"
+      "item": "backportedspellbooks:pale_amber"
     },
     "C": {
       "item": "minecraft:creaking_heart"

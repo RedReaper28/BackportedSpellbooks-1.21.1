@@ -16,7 +16,7 @@ public class ModCreativeTabs {
 
 
     public static final Supplier<CreativeModeTab> MONSTERS_AND_GEAR_TAB=CREATIVE_MODE_TAB.register("backportedspellbooks",
-            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.PALE_OBSERVER_HELMET.get()))
+            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.PALE_GUIDE.get()))
                     .title(Component.translatable("creative_tab.backportedspellbooks.backported_spellbooks"))
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModItems.EYEBLOOSOM_STAFF.get());
@@ -27,6 +27,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.PALE_OBSERVER_CHESTPLATE.get());
                         output.accept(ModItems.PALE_OBSERVER_LEGGINGS.get());
                         output.accept(ModItems.PALE_OBSERVER_BOOTS.get());
+
+                        output.accept(ModItems.RESIN_VIAL.get());
+                        output.accept(ModItems.PALE_AMBER.get());
 
                     }).build());
 
