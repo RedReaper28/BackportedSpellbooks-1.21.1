@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:slime_ball"
+    },
+    "B": {
+      "item": "irons_spellbooks:nature_rune"
+    },
+    "C": {
+      "item": "irons_spellbooks:magic_cloth"
+    }
+  },
+  "result": {
+    "id": "backportedspellbooks:slime_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "backportedspellbooks:block/corroded_fossil_ore"
+    }
+  }
+}

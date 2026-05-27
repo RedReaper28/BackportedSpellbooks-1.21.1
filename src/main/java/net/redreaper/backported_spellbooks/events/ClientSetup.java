@@ -10,6 +10,7 @@ import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.redreaper.backported_spellbooks.BackportedSpellbooks;
 import net.redreaper.backported_spellbooks.entities.spell.pale_thorn.PaleThornVisualEntityRenderer;
+import net.redreaper.backported_spellbooks.entities.spell.sulfur_bomb.SulfurBombRenderer;
 import net.redreaper.backported_spellbooks.init.ModEntities;
 import net.redreaper.backported_spellbooks.init.ModFluids;
 import net.redreaper.backported_spellbooks.init.ModParticleTypes;
@@ -24,6 +25,9 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.PALE_THORN_VISUAL_ENTITY.get(), PaleThornVisualEntityRenderer::new);
         event.registerEntityRenderer(ModEntities.RESIN_SPRAY_PROJECTILE.get(), NoopRenderer::new);
 
+        event.registerEntityRenderer(ModEntities.SULFUR_FIELD.get(), NoopRenderer::new);
+        event.registerEntityRenderer(ModEntities.SULFUR_BOMB.get(), SulfurBombRenderer::new);
+        event.registerEntityRenderer(ModEntities.SULFUR_CLOUD.get(), NoopRenderer::new);
 
 
     }

@@ -6,8 +6,10 @@ import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -28,6 +30,14 @@ public class ModExtendedArmorMaterials {
             20,
             SoundRegistry.OAKSKIN_CAST,
             () -> Ingredient.of(ModItems.RESIN_BRICK.get()),
+            0,
+            0);
+
+    public static DeferredHolder<ArmorMaterial,ArmorMaterial> SLIME_BOOTS=register("slime_boots",
+            schoolHybridArmorMap(),
+            20,
+            SoundEvents.ARMOR_EQUIP_GENERIC,
+            () -> Ingredient.of(Items.SLIME_BALL),
             0,
             0);
 

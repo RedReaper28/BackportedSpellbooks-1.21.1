@@ -9,8 +9,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redreaper.backported_spellbooks.BackportedSpellbooks;
 import net.redreaper.backported_spellbooks.item.armor.PaleObserverArmorItem;
+import net.redreaper.backported_spellbooks.item.armor.SlimeBootsArmorItem;
 import net.redreaper.backported_spellbooks.item.curios.spellbooks.PaleGuideSpellbookItem;
 import net.redreaper.backported_spellbooks.item.staves.eyebloosom_staff.EyeBloosomStaffItem;
+import net.redreaper.backported_spellbooks.item.staves.miasma_staff.MiasmaStaffItem;
 import net.redreaper.backported_spellbooks.item.weapons.GardenRapierItem;
 
 public class ModItems {
@@ -20,6 +22,8 @@ public class ModItems {
             PaleGuideSpellbookItem::new);
     public static final DeferredItem<Item> EYEBLOOSOM_STAFF=ITEMS.register("eyebloosom_staff",
             EyeBloosomStaffItem::new);
+    public static final DeferredHolder<Item, Item> MIASMA_STAFF = ITEMS.register("miasma_staff",
+            MiasmaStaffItem::new);
     public static final DeferredItem<Item> GARDEN_RAPIER=ITEMS.register("garden_rapier",
             GardenRapierItem::new);
 
@@ -32,10 +36,17 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> PALE_OBSERVER_BOOTS = ITEMS.register("pale_observer_boots", () ->
             new PaleObserverArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).durability(ArmorItem.Type.BOOTS.getDurability(37))));
 
+    public static final DeferredHolder<Item, Item> SLIME_BOOTS = ITEMS.register("slime_boots", () ->
+            new SlimeBootsArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).durability(ArmorItem.Type.BOOTS.getDurability(20))));
+
+
     public static final DeferredItem<Item> RESIN_VIAL=ITEMS.register("resin_vial",
             () -> new Item(ItemPropertiesHelper.material()));
 
     public static final DeferredItem<Item> PALE_AMBER=ITEMS.register("pale_amber",
+            () -> new Item(ItemPropertiesHelper.material()));
+
+    public static final DeferredItem<Item> CORRODED_FOSSIL=ITEMS.register("corroded_fossil",
             () -> new Item(ItemPropertiesHelper.material()));
 
     public static void register(IEventBus eventBus){

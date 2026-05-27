@@ -1,25 +1,42 @@
 {
   "item.backportedspellbooks.pale_guide_spell_book": "Pale Garden Guide",
   "item.backportedspellbooks.eyebloosom_staff": "Eyebloosom Staff",
+  "item.backportedspellbooks.miasma_staff": "Miasmic Staff",
+  "item.backportedspellbooks.miasma_staff.desc": "Dealing Nature or Hydro Spell Damage inflicts Sulfuric Poison",
   "item.backportedspellbooks.garden_rapier": "Garden Rapier",
-  "item.backportedspellbooks.garden_rapier.desc": "Inflicts Resin Poison on Hit",
+  "item.backportedspellbooks.garden_rapier.desc": "Inflicts Intoxication Poison on Hit",
 
   "item.backportedspellbooks.pale_observer_helmet": "Pale Observer Mask",
   "item.backportedspellbooks.pale_observer_chestplate": "Pale Observer Chestplate",
   "item.backportedspellbooks.pale_observer_leggings": "Pale Observer Leggings",
   "item.backportedspellbooks.pale_observer_boots": "Pale Observer Boots",
-  "item.backportedspellbooks.resin_vial": "Pale Resin Viqal",
+  "item.backportedspellbooks.slime_boots": "Slime Boots",
+  "item.backportedspellbooks.slime_boots.desc": "Prevent Fall Damage",
+  "item.backportedspellbooks.resin_vial": "Pale Resin Vial",
   "item.backportedspellbooks.pale_amber": "Pale Amber",
+  "item.backportedspellbooks.corroded_fossil": "Corroded Fossil ",
+  "item.backportedspellbooks.corroded_fossil.guide": "Found between cinnabar in the Sulfuric Caves",
+
+  "block.backportedspellbooks.corroded_fossil_ore": "Corroded Fossil Ore",
 
   "creative_tab.backportedspellbooks.backported_spellbooks": "Backported Spellbooks",
 
   "effect.backportedspellbooks.paranoia": "Paranoia",
-  "effect.backportedspellbooks.resin_poison": "Resin Poison",
+  "effect.backportedspellbooks.resin_poison": "Resin Intoxication",
+  "effect.backportedspellbooks.sulfuric_poison": "Sulfuric Poison",
 
   "spell.backportedspellbooks.pale_thorn": "Pale Thorn",
   "spell.backportedspellbooks.pale_thorn.guide": "Shot a thick pale thorn,inflicting Páranoia to lower your targets maximum mana and cast speed, piercing blocks.Damage scales with Nature Spell Power and Eldritch Spell Power",
+  "spell.backportedspellbooks.slime_aspect": "Aspect of the Slime",
+  "spell.backportedspellbooks.slime_aspect.guide": "Instill yourself with slimy magic, giving your body the properties of both Slime and Sulfur Cubes",
   "spell.backportedspellbooks.resin_spray": "Resin Spray",
-  "spell.backportedspellbooks.resin_spray.guide": "Spew forward a cone of pale resin,damaging an inflicting Resin Poisoning to creatures it reaches.Damage scales with Nature Spell Power and Eldritch Spell Power",
+  "spell.backportedspellbooks.resin_spray.guide": "Spew forward a cone of pale resin,damaging an inflicting Resin Intoxication to creatures it reaches.Damage scales with Nature Spell Power and Eldritch Spell Power",
+  "spell.backportedspellbooks.sulfur_bomb": "Sulfur Bomb",
+  "spell.backportedspellbooks.sulfur_bomb.guide": "Launch a bomb made out of sulfur, releasing a withering cloud of gas on impact where it lands",
+  "spell.backportedspellbooks.sulfur_clouds": "Sulfur Clouds",
+  "spell.backportedspellbooks.sulfur_clouds.guide": "Launch 3 noxious pricing clouds of sulfur gas that inflict an enhanced version of poison",
+  "spell.backportedspellbooks.sulfur_release": "Sulfur Release",
+  "spell.backportedspellbooks.sulfur_release.guide": "Release a small quantity of noxious pure sulfur gas,poisoning life that the gas reaches with with an enhanced version of poison",
 
   "school.backportedspellbooks.pale_flora": "Pale Flora"
 }

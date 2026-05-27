@@ -4,8 +4,7 @@ import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redreaper.backported_spellbooks.BackportedSpellbooks;
-import net.redreaper.backported_spellbooks.spells.nature.PaleThornSpell;
-import net.redreaper.backported_spellbooks.spells.nature.ResinSpraySpell;
+import net.redreaper.backported_spellbooks.spells.nature.*;
 
 import java.util.function.Supplier;
 
@@ -20,8 +19,12 @@ public class ModSpellRegistry {
     }
 
     //NATURE
-    public static final Supplier<AbstractSpell> PALE_THORN = registerSpell(new PaleThornSpell());
-    public static final Supplier<AbstractSpell> RESIN_SPRAY = registerSpell(new ResinSpraySpell());
+     public static final Supplier<AbstractSpell> SLIME_ASPECT = registerSpell(new AspectOfTheSlimeSpell());
+     public static final Supplier<AbstractSpell> SULFUR_BOMB = registerSpell(new SulfurBombSPell());
+     public static final Supplier<AbstractSpell> SULFUR_CLOUD = registerSpell(new SulfurCloudSpell());
+     public static final Supplier<AbstractSpell> SULFUR_RELEASE = registerSpell(new SulfurReleaseSpell());
+     public static final Supplier<AbstractSpell> PALE_THORN = registerSpell(new PaleThornSpell());
+     public static final Supplier<AbstractSpell> RESIN_SPRAY = registerSpell(new ResinSpraySpell());
 
     public static void register(IEventBus eventBus)
     {

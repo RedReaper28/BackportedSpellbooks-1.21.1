@@ -10,6 +10,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.redreaper.backported_spellbooks.entities.weapons.GardenRapierRenderer;
 import net.redreaper.backported_spellbooks.init.*;
 import net.redreaper.backported_spellbooks.item.staves.eyebloosom_staff.EyebloosomStaffRenderer;
+import net.redreaper.backported_spellbooks.item.staves.miasma_staff.MiasmaStaffRenderer;
 import net.redreaper.backported_spellbooks.item.weapons.GardenRapierItem;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class BackportedSpellbooks {
 
         ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         ModExtendedArmorMaterials.register(modEventBus);
         ModEntities.register(modEventBus);
@@ -69,6 +71,7 @@ public class BackportedSpellbooks {
 
 
             AzItemRendererRegistry.register(EyebloosomStaffRenderer::new, ModItems.EYEBLOOSOM_STAFF.get());
+            AzItemRendererRegistry.register(MiasmaStaffRenderer::new, ModItems.MIASMA_STAFF.get());
             AzItemRendererRegistry.register(GardenRapierRenderer::new, ModItems.GARDEN_RAPIER.get());
 
             // Curio Rendering

@@ -8,6 +8,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 
 public class ModStaffMaterials implements IronsWeaponTier {
     public static ModStaffMaterials EYEBLOOSOM;
+    public static ModStaffMaterials MIASMA;
     float damage;
     float speed;
     AttributeContainer[] attributeContainers;
@@ -36,6 +37,14 @@ public class ModStaffMaterials implements IronsWeaponTier {
                 new AttributeContainer(AttributeRegistry.NATURE_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(AttributeRegistry.ELDRITCH_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(ASAttributeRegistry.MANA_STEAL, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)});
+    }
+
+    static {
+        MIASMA = new ModStaffMaterials(4.0F, -3.0F, new AttributeContainer[]{
+                new AttributeContainer(AttributeRegistry.NATURE_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                new AttributeContainer(ASAttributeRegistry.HYDRO_MAGIC_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                new AttributeContainer(ASAttributeRegistry.SPELL_RES_PENETRATION, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)});
     }
 }

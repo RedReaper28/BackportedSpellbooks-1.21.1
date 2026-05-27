@@ -20,6 +20,7 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creative_tab.backportedspellbooks.backported_spellbooks"))
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModItems.EYEBLOOSOM_STAFF.get());
+                        output.accept(ModItems.MIASMA_STAFF.get());
                         output.accept(ModItems.PALE_GUIDE.get());
                         output.accept(ModItems.GARDEN_RAPIER.get());
 
@@ -27,9 +28,11 @@ public class ModCreativeTabs {
                         output.accept(ModItems.PALE_OBSERVER_CHESTPLATE.get());
                         output.accept(ModItems.PALE_OBSERVER_LEGGINGS.get());
                         output.accept(ModItems.PALE_OBSERVER_BOOTS.get());
+                        output.accept(ModItems.SLIME_BOOTS.get());
 
                         output.accept(ModItems.RESIN_VIAL.get());
                         output.accept(ModItems.PALE_AMBER.get());
+                        output.accept(ModItems.CORRODED_FOSSIL.get());
 
                     }).build());
 
