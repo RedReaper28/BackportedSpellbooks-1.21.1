@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "backportedspellbooks:eyebloosom_staff"
+    "backportedspellbooks:eyebloosom_staff",
+    "backportedspellbooks:miasma_staff"
   ]
 }

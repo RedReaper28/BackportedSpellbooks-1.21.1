@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GMM",
+    "GHH",
+    "GMM"
+  ],
+  "key": {
+    "G": {
+      "item": "backportedspellbooks:quicksilver_ingot"
+    },
+    "M": {
+      "item": "irons_spellbooks:arcane_ingot"
+    },
+    "H": {
+      "item": "irons_spellbooks:hogskin"
+    }
+  },
+  "result": {
+    "id": "backportedspellbooks:quicksilver_spell_book",
+    "count": 1
+  }
+}

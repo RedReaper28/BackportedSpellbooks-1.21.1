@@ -1,5 +1,6 @@
 package net.redreaper.backported_spellbooks.init;
 
+import com.blackgear.vanillabackport.client.registries.ModSoundTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -18,10 +19,16 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block>CORRODED_FOSSIL_ORE=registerBlock("corroded_fossil_ore",
-            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).sound(SoundType.BONE_BLOCK)));
+            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).sound(ModSoundTypes.CINNABAR)));
 
+    public static final DeferredBlock<Block>QUICkSILVER_ORE=registerBlock("quicksilver_ore",
+            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_ORE).sound(ModSoundTypes.CINNABAR)));
 
+    public static final DeferredBlock<Block>RAW_QUICkSILVER_BLOCK=registerBlock("raw_quicksilver_block",
+            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_COPPER_BLOCK).sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block>QUICkSILVER_BLOCK=registerBlock("quicksilver_block",
+            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).sound(SoundType.COPPER)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn=BLOCKS.register(name,block);

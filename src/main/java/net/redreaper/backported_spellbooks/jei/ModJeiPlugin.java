@@ -8,6 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.redreaper.backported_spellbooks.BackportedSpellbooks;
 import net.redreaper.backported_spellbooks.init.ModItems;
 
+@mezz.jei.api.JeiPlugin
 public class ModJeiPlugin implements IModPlugin {
 
     @Override
@@ -18,5 +19,6 @@ public class ModJeiPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         registration.addItemStackInfo(new ItemStack(ModItems.CORRODED_FOSSIL.get()), Component.translatable("item.backportedspellbooks.corroded_fossil.guide"));
+        registration.addItemStackInfo(new ItemStack(ModItems.RAW_QUICKSILVER.get()), Component.translatable("item.backportedspellbooks.raw_quicksilver.guide"));
     }
 }

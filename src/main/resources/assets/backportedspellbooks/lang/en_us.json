@@ -1,5 +1,6 @@
 {
   "item.backportedspellbooks.pale_guide_spell_book": "Pale Garden Guide",
+  "item.backportedspellbooks.quicksilver_spell_book": "QuickSilver Spellbook",
   "item.backportedspellbooks.eyebloosom_staff": "Eyebloosom Staff",
   "item.backportedspellbooks.miasma_staff": "Miasmic Staff",
   "item.backportedspellbooks.miasma_staff.desc": "Dealing Nature or Hydro Spell Damage inflicts Sulfuric Poison",
@@ -14,10 +15,16 @@
   "item.backportedspellbooks.slime_boots.desc": "Prevent Fall Damage",
   "item.backportedspellbooks.resin_vial": "Pale Resin Vial",
   "item.backportedspellbooks.pale_amber": "Pale Amber",
-  "item.backportedspellbooks.corroded_fossil": "Corroded Fossil ",
-  "item.backportedspellbooks.corroded_fossil.guide": "Found between cinnabar in the Sulfuric Caves",
+  "item.backportedspellbooks.corroded_fossil": "Corroded Fossil",
+  "item.backportedspellbooks.corroded_fossil.guide": "Found between Sulfur in the Sulfuric Caves",
+  "item.backportedspellbooks.raw_quicksilver": "Raw Quicksilver",
+  "item.backportedspellbooks.raw_quicksilver.guide": "Found between Cinnabar in the Sulfuric Caves",
+  "item.backportedspellbooks.quicksilver_ingot": "Quicksilver Ingot",
 
   "block.backportedspellbooks.corroded_fossil_ore": "Corroded Fossil Ore",
+  "block.backportedspellbooks.quicksilver_ore": "Quicksilver Ore",
+  "block.backportedspellbooks.raw_quicksilver_block": "Raw Quicksilver Block",
+  "block.backportedspellbooks.quicksilver_block": "Quicksilver Block",
 
   "creative_tab.backportedspellbooks.backported_spellbooks": "Backported Spellbooks",
 

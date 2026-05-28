@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "backportedspellbooks:block/quicksilver_ore"
+    }
+  }
+}

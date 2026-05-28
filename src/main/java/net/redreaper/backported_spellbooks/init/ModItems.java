@@ -11,6 +11,7 @@ import net.redreaper.backported_spellbooks.BackportedSpellbooks;
 import net.redreaper.backported_spellbooks.item.armor.PaleObserverArmorItem;
 import net.redreaper.backported_spellbooks.item.armor.SlimeBootsArmorItem;
 import net.redreaper.backported_spellbooks.item.curios.spellbooks.PaleGuideSpellbookItem;
+import net.redreaper.backported_spellbooks.item.curios.spellbooks.QuickSilverSpellbookItem;
 import net.redreaper.backported_spellbooks.item.staves.eyebloosom_staff.EyeBloosomStaffItem;
 import net.redreaper.backported_spellbooks.item.staves.miasma_staff.MiasmaStaffItem;
 import net.redreaper.backported_spellbooks.item.weapons.GardenRapierItem;
@@ -20,6 +21,10 @@ public class ModItems {
 
     public static final DeferredHolder<Item, Item>PALE_GUIDE = ITEMS.register("pale_guide_spell_book",
             PaleGuideSpellbookItem::new);
+
+    public static final DeferredHolder<Item, Item>QUICKSILVER_SPELLBOOK = ITEMS.register("quicksilver_spell_book",
+            QuickSilverSpellbookItem::new);
+
     public static final DeferredItem<Item> EYEBLOOSOM_STAFF=ITEMS.register("eyebloosom_staff",
             EyeBloosomStaffItem::new);
     public static final DeferredHolder<Item, Item> MIASMA_STAFF = ITEMS.register("miasma_staff",
@@ -44,6 +49,12 @@ public class ModItems {
             () -> new Item(ItemPropertiesHelper.material()));
 
     public static final DeferredItem<Item> PALE_AMBER=ITEMS.register("pale_amber",
+            () -> new Item(ItemPropertiesHelper.material()));
+
+    public static final DeferredItem<Item> RAW_QUICKSILVER=ITEMS.register("raw_quicksilver",
+            () -> new Item(ItemPropertiesHelper.material()));
+
+    public static final DeferredItem<Item> QUICKSILVER_INGOT=ITEMS.register("quicksilver_ingot",
             () -> new Item(ItemPropertiesHelper.material()));
 
     public static final DeferredItem<Item> CORRODED_FOSSIL=ITEMS.register("corroded_fossil",

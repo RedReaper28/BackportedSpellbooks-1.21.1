@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "backportedspellbooks:block/quicksilver_block"
+  }
+}

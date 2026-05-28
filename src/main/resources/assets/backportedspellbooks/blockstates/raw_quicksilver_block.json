@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "backportedspellbooks:block/raw_quicksilver_block"
+    }
+  }
+}

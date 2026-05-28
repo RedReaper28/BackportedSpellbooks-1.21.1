@@ -77,6 +77,7 @@ public class BackportedSpellbooks {
             // Curio Rendering
             event.enqueueWork(() -> {
                 CuriosRendererRegistry.register(ModItems.PALE_GUIDE.get(), SpellBookCurioRenderer::new);
+                CuriosRendererRegistry.register(ModItems.QUICKSILVER_SPELLBOOK.get(), SpellBookCurioRenderer::new);
             });
 
 
